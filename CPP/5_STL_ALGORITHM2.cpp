@@ -1,12 +1,12 @@
 #include <iostream>
 
-// Step 2. °Ë»ö ±¸°£ÀÇ ÀÏ¹İÈ­ ( ºÎºĞ ¹®ÀÚ¿­ °Ë»öÀÌ °¡´ÉÇÏ°Ô)
+// Step 2. ê²€ìƒ‰ êµ¬ê°„ì˜ ì¼ë°˜í™” ( ë¶€ë¶„ ë¬¸ìì—´ ê²€ìƒ‰ì´ ê°€ëŠ¥í•˜ê²Œ)
 char* strchr(char* first, char* last, int c)
 {
 	while ( first != last && *first != c)
 		++first;
 
-	return *first == 0 ? nullptr : first;
+	return first == last ? nullptr : first;
 }
 
 int main()
