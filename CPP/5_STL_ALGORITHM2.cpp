@@ -1,6 +1,7 @@
 #include <iostream>
 
 // Step 2. 검색 구간의 일반화 ( 부분 문자열 검색이 가능하게)
+// // [first, last)
 char* strchr(char* first, char* last, int c)
 {
 	while ( first != last && *first != c)
